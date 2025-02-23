@@ -7,7 +7,7 @@ const themeTags = ["Island Tour", "Land Tour", "Safari"];
 const activityTags = ["Swimming", "Running", "Elephant care", "Snorkeling"];
 const vehicleTags = ["Yacht", "Speedboat", "Safari", "Catamaran", "Speedcatamaran"];
 const featureTags = ["Transfer", "Halal Food", "Vegetarian Food"];
-const categoryOptions = ["Tours", "Tickets", "Rent", "Transfer"];
+const categoryOptions = ["TOURS", "TICKETS", "RENT", "TRANSFER"];
 
 export default function FilterSidebar({ isOpen, onClose, onSearch }) {
   if (!isOpen) return null;
@@ -86,9 +86,9 @@ export default function FilterSidebar({ isOpen, onClose, onSearch }) {
         <div className="mt-8 mb-3 relative">
           <button
             onClick={() => setShowCategoryDropdown(!showCategoryDropdown)}
-            className="absolute left-1 bg-primary-500 text-white hover:bg-primary-600 font-semibold flex items-center gap-1 border-2 border-primary-500 hover:border-primary-600 font-bold py-2 px-4 rounded-lg transition-colors"
+            className="absolute bottom-1 left-1 bg-primary-500 text-white hover:bg-primary-600 font-semibold flex items-center gap-1 border-2 border-primary-500 hover:border-primary-600 font-bold py-2 px-4 rounded-lg transition-colors"
           >
-            {selectedCategory || "Tours"}
+            {selectedCategory || "TOURS"}
             
           </button>
 
